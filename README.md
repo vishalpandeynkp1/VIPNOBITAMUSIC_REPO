@@ -5,7 +5,7 @@
 
 <p align="center">
     <b>ᴠɪsɪᴛᴏʀs</b><br>
-    <img align="middle" src="https://profile-counter.glitch.me/THE-VIP-BOY-OP/count.svg" />
+    <img align="middle" src="https://profile-counter.glitch.me/NOBITA-BOT-MAKER/count.svg" />
 </p>
 
 <h2 align="center">
