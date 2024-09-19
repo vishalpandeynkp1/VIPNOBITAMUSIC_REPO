@@ -51,7 +51,7 @@
 </h3>
 
 ### 🖇 VPS Deployment
-- Clone repo: `git clone https://github.com/THE-VIP-BOY-OP/VIP-MUSIC && cd VIP-MUSIC`
+- Clone repo: `git clone https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO && cd VIPNOBITAMUSIC_REPO`
 - Setup by: `bash setup`
 - Fill [Extra Variables](https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO/blob/master/sample.env) by `nano .env`, save changes with `CTRL+X`, then `y`, then `Enter`
 - Install tmux: `sudo apt install tmux && tmux`
