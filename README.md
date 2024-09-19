@@ -39,7 +39,7 @@
 
 - [![YouTube Video Views](https://img.shields.io/youtube/views/U8T5W3J1FNo?label=Tutorial+•+Heroku+•&style=social)](https://youtu.be/U8T5W3J1FNo)
 
-<img src="https://readme-typing-svg.herokuapp.com?color=FF0000&width=420&lines=⚠️𝐈𝐟+𝐀𝐧𝐲+𝐄𝐫𝐫𝐨𝐫+𝐓𝐡𝐞𝐧+𝐒𝐞𝐧𝐝+𝐄𝐫𝐫𝐨𝐫+𝐈𝐧+𝐕𝐢𝐩+𝐃𝐦+...">
+<img src="https://readme-typing-svg.herokuapp.com?color=FF0000&width=420&lines=⚠️𝐊𝐎𝐈+𝐃𝐈𝐊𝐊𝐀𝐓+𝐌𝐒𝐆+𝐊𝐑">
 <p align="center">
     <a href="https://telegram.me/ll_NOBITA_BOT_DEVLOPER_ll">
         <img src="https://img.shields.io/badge/-☆ησвιтα вσт мαкєя%20☆-blue.svg?style=for-the-badge&logo=Telegram">
