@@ -27,7 +27,6 @@ from VIPMUSIC.core.userbot import assistants
 from VIPMUSIC.misc import SUDOERS, pymongodb
 from VIPMUSIC.plugins import ALL_MODULES
 from VIPMUSIC.utils.database import (
-    get_broadcast_stats,
     get_global_tops,
     get_particulars,
     get_queries,
@@ -269,9 +268,6 @@ async def overall_stats(client, CallbackQuery, _):
         ass = "No"
 
     # Fetch latest broadcast stats
-    broadcast_stats = await get_broadcast_stats()
-    last_sent_groups = broadcast_stats["sent"]
-    last_sent_users = broadcast_stats["susr"]
 
     text = f"""**ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ:**
 
@@ -280,8 +276,6 @@ async def overall_stats(client, CallbackQuery, _):
 **sᴇʀᴠᴇᴅ ᴜsᴇʀs:** {served_users} 
 **ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀs:** {blocked} 
 **sᴜᴅᴏ ᴜsᴇʀs:** {sudoers}
-**ɢᴄᴀꜱᴛ ɢʀᴏᴜᴘ ᴄᴏᴜɴᴛ:** {last_sent_groups}
-**ɢᴄᴀꜱᴛ ᴜꜱᴇʀ ᴄᴏᴜɴᴛ:** {last_sent_users}
     
 **ᴛᴏᴛᴀʟ ǫᴜᴇʀɪᴇs:** {total_queries} 
 **ᴛᴏᴛᴀʟ ᴀssɪsᴛᴀɴᴛs:** {assistant}
@@ -350,11 +344,6 @@ async def overall_stats(client, CallbackQuery, _):
     blocked = len(BANNED_USERS)
     sudoers = len(await get_sudoers())
 
-    # Fetch latest broadcast stats
-    broadcast_stats = await get_broadcast_stats()
-    last_sent_groups = broadcast_stats["sent"]
-    last_sent_users = broadcast_stats["susr"]
-
     text = f""" **ʙᴏᴛ sᴛᴀᴛ's ᴀɴᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ:**
 
 **ɪᴍᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇs:** {mod}
@@ -376,8 +365,6 @@ async def overall_stats(client, CallbackQuery, _):
 **sᴇʀᴠᴇᴅ ᴜsᴇʀs:** {served_users} 
 **ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀs:** {blocked} 
 **sᴜᴅᴏ ᴜsᴇʀs:** {sudoers} 
-**ɢᴄᴀꜱᴛ ɢʀᴏᴜᴘ ᴄᴏᴜɴᴛ:** {last_sent_groups}
-**ɢᴄᴀꜱᴛ ᴜꜱᴇʀ ᴄᴏᴜɴᴛ:** {last_sent_users}
 
 **ᴛᴏᴛᴀʟ ᴅʙ sᴛᴏʀᴀɢᴇ:** {storage} ᴍʙ
 **ᴛᴏᴛᴀʟ ᴅʙ ᴄᴏʟʟᴇᴄᴛɪᴏɴs:** {collections}
