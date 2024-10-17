@@ -35,7 +35,14 @@
     <img src="https://envs.sh/wWo.jpg">
 </p>
 
-**𝙏𝙀𝙎𝙏 𝘽𝙊𝙏 ➣ [🅰🅰🆁🆄 🅼🆄🆂🅸🅲 ](https://t.me/aaru_music_xbot)**
+**
+## 𝙏𝙀𝙎𝙏 𝘽𝙊𝙏
+
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; background-color: #f9f9f9;">
+    <h3 style="margin: 0;">🅰🅰🆁🆄 🅼🆄🆂🅸🅲</h3>
+    <p>Join our Aaru Music Bot for an enhanced music experience!</p>
+    <a href="https://t.me/aaru_music_xbot" style="display: inline-block; padding: 10px 20px; margin-top: 10px; background-color: #4CAF50; color: white; border-radius: 5px; text-decoration: none;">Start Here</a>
+</div>
 
 <img src="https://readme-typing-svg.herokuapp.com?color=FF0000&width=420&lines=⚠️𝐋𝐀𝐔𝐃𝐄+𝐒𝐀𝐁𝐒𝐄+𝐏𝐄𝐇𝐋𝐄+𝐅𝐑𝐎𝐊+𝐊𝐑+𝐋𝐄⚠️">
 
