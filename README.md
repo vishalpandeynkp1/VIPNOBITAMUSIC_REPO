@@ -5,8 +5,10 @@
    [![NOBITA](https://github-stats-alpha.vercel.app/api?username=vishalpandeynkp1 "NOBITA")](https://github-stats-alpha.vercel.app/api?username=vishalpandeynkp1 "NOBITA")
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ![Stars](https://img.shields.io/github/stars/vishalpandeynkp1/VIPNOBITAMUSIC_REPO?style=social)
 ![Forks](https://img.shields.io/github/forks/vishalpandeynkp1/VIPNOBITAMUSIC_REPO?style=social)
+
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
