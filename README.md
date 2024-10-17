@@ -1,5 +1,10 @@
-
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<p align="left">
+                                                   🔱      𝐉𝐀𝐈 𝐒𝐇𝐑𝐄𝐄 𝐌𝐀𝐇𝐀𝐊𝐀𝐋       🔱
+    
+ <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+
 
 [![Vishal's GitHub Profile](https://github-readme-stats.vercel.app/api?username=vishalpandeynkp1&show_icons=true&theme=flag-india)](https://github.com/vishalpandeynkp1)
  [![GIF](https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO/blob/main/VIPNOBITAMUSIC.gif)](https://github.com/vishalpandeynkp1)
@@ -11,13 +16,6 @@
 ![Forks](https://img.shields.io/github/forks/vishalpandeynkp1/VIPNOBITAMUSIC_REPO?style=social)
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-
-<p align="left">
-
-                                                    🔱      𝐉𝐀𝐈 𝐒𝐇𝐑𝐄𝐄 𝐌𝐀𝐇𝐀𝐊𝐀𝐋       🔱
-    
- <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
 <p align="center">
