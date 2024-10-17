@@ -4,7 +4,7 @@
     
  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-
+[![Vishal's GitHub Profile](https://img.shields.io/badge/GitHub-VishalPandey-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vishalpandeynkp1)
 ![Stars](https://img.shields.io/github/stars/vishalpandeynkp1/VIPNOBITAMUSIC_REPO?style=social)
 ![Forks](https://img.shields.io/github/forks/vishalpandeynkp1/VIPNOBITAMUSIC_REPO?style=social)
 
