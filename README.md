@@ -1,4 +1,22 @@
-━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+![Nobita Stats](https://github-readme-stats.vercel.app/api?username=vishalpandeynkp1&theme=flag-india)
+
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+![Stars](https://img.shields.io/github/stars/vishalpandeynkp1/VIPNOBITAMUSIC_REPO?style=social)
+![Forks](https://img.shields.io/github/forks/vishalpandeynkp1/VIPNOBITAMUSIC_REPO?style=social)
+
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+ [![GIF](https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO/blob/main/VIPNOBITAMUSIC.gif)](https://github.com/vishalpandeynkp1)
+   [![NOBITA](https://github-stats-alpha.vercel.app/api?username=vishalpandeynkp1 "NOBITA")](https://github-stats-alpha.vercel.app/api?username=vishalpandeynkp1 "NOBITA")
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+
 <p align="left">
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -73,26 +91,3 @@
 <a href="https://instagram.com/NOBITA_BOT_MAKER">
     <img title="Instagram" src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">
 </a>
-
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-![Nobita GitHub Stats](https://github-readme-stats.vercel.app/api?username=vishalpandeynkp1&theme=flag-india)
-
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-![Stars](https://img.shields.io/github/stars/vishalpandeynkp1/VIPNOBITAMUSIC_REPO?style=social)
-![Forks](https://img.shields.io/github/forks/vishalpandeynkp1/VIPNOBITAMUSIC_REPO?style=social)
-
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
- [![GIF](https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO/blob/main/VIPNOBITAMUSIC.gif)](https://github.com/vishalpandeynkp1)
-   [![NOBITA](https://github-stats-alpha.vercel.app/api?username=vishalpandeynkp1 "NOBITA")](https://github-stats-alpha.vercel.app/api?username=vishalpandeynkp1 "NOBITA")
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-
-
-
