@@ -67,3 +67,14 @@
 <a href="https://instagram.com/NOBITA_BOT_MAKER">
     <img title="Instagram" src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">
 </a>
+
+
+
+
+
+ [![GIF](https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO/blob/main/VIPNOBITAMUSIC.gif)](https://github.com/vishalpandeynkp1)
+   [![NOBITA](https://github-stats-alpha.vercel.app/api?username=vishalpandeynkp1 "NOBITA")](https://github-stats-alpha.vercel.app/api?username=vishalpandeynkp1 "NOBITA")
+
+
+
+
