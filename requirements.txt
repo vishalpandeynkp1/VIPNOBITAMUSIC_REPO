@@ -1,5 +1,4 @@
-Abg==2.3.1
-deep-translator
+
 pyromod
 openai
 aiofiles
@@ -13,7 +12,7 @@ hachoir
 heroku3
 httpx[http2]
 lyricsgenius
-motor==2.5.0
+motor
 wget
 pillow==9.5.0
 pymongo==3.12.0
@@ -38,4 +37,3 @@ git+https://github.com/KurimuzonAkuma/pyrogram@dev
 git+https://github.com/yt-dlp/yt-dlp
 git+https://github.com/alexmercerind/youtube-search-python@main
 git+https://github.com/joetats/youtube_search@master
-git+https://github.com/Vivekkumar-IN/yt-dlp-youtube-oauth2
