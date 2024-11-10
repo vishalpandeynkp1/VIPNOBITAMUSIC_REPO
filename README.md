@@ -25,14 +25,14 @@
 </p>
 
 <h2 align="center">
-    ─「 𝐍𝐎𝐁𝐈𝐓𝐀 𝐌𝐔𝐒𝐈𝐂  」─
+    ─「 𝐂𝐇𝐔𝐇𝐀 𝐋𝐈𝐕𝐄 𝐌𝐔𝐒𝐈𝐂  」─
 
 ★ 𝙷𝙴𝚁𝙾𝙺𝚄 + 𝚅𝙿𝚂 ★
 </h2>
 <img src="https://readme-typing-svg.herokuapp.com?color=FF0000&width=420&lines=♦𝙳𝙴𝙿𝙻𝙾𝚈+𝙾𝙽+𝙷𝙴𝚁𝙾𝙺𝚄♦;♨️+𝙽𝙾+𝙷𝙴𝚁𝙾𝙺𝚄+𝙱𝙰𝙽+𝙸𝚂𝚂𝚄𝙴+𝙰𝙻𝚂𝙾+𝚅𝙿𝚂+𝙳𝙴𝙿𝙻𝙾𝚈+📍+𝙿𝚁𝙴𝚂𝙴𝙽𝚃;🎭+𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈+𝙽𝙾𝙱𝙸𝚃𝙰+𝙱𝙾𝚃+𝙼𝙰𝙺𝙴𝚁+🎭">
 
 <p align="center">
-    <img src="https://envs.sh/wWo.jpg">
+    <img src="https://envs.sh/cw1.png">
 </p>
 
 **
