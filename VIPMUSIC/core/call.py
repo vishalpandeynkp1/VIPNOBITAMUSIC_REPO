@@ -1,8 +1,8 @@
 # Copyright (C) 2024 by VISHAL-PANDEY@Github, < https://github.com/vishalpandeynkp1 >.
 #
-# This file is part of < https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO > project,
+# This file is part of < https://github.com/vishalpandeynkp1/VIPVIPMUSIC_REPO > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO/blob/master/LICENSE >
+# Please see < https://github.com/vishalpandeynkp1/VIPVIPMUSIC_REPO/blob/master/LICENSE >
 #
 # All rights reserved.
 #
@@ -16,7 +16,7 @@ from pyrogram.enums import ChatMembersFilter, ChatMemberStatus
 from pyrogram.errors import (
     ChatAdminRequired,
     FloodWait,
-    UsNOBITAlreadyParticipant,
+    UsVIPlreadyParticipant,
     UserNotParticipant,
 )
 from pyrogram.types import InlineKeyboardMarkup
@@ -32,9 +32,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from NOBITAMUSIC import LOGGER, YouTube, app
-from NOBITAMUSIC.misc import db
-from NOBITAMUSIC.utils.database import (
+from VIPMUSIC import LOGGER, YouTube, app
+from VIPMUSIC.misc import db
+from VIPMUSIC.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_assistant,
@@ -49,11 +49,11 @@ from NOBITAMUSIC.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from NOBITAMUSIC.utils.exceptions import AssistantErr
-from NOBITAMUSIC.utils.formatters import check_duration, seconds_to_min, speed_converter
-from NOBITAMUSIC.utils.inline.play import stream_markup, telegram_markup
-from NOBITAMUSIC.utils.stream.autoclear import auto_clean
-from NOBITAMUSIC.utils.thumbnails import gen_thumb
+from VIPMUSIC.utils.exceptions import AssistantErr
+from VIPMUSIC.utils.formatters import check_duration, seconds_to_min, speed_converter
+from VIPMUSIC.utils.inline.play import stream_markup, telegram_markup
+from VIPMUSIC.utils.stream.autoclear import auto_clean
+from VIPMUSIC.utils.thumbnails import gen_thumb
 
 active = []
 autoend = {}
@@ -117,7 +117,7 @@ async def _clear_(chat_id):
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            name="NOBITAString1",
+            name="VIPString1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -127,7 +127,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot2 = Client(
-            name="NOBITAString2",
+            name="VIPString2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
@@ -137,7 +137,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot3 = Client(
-            name="NOBITAString3",
+            name="VIPString3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
@@ -147,7 +147,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name="NOBITAString4",
+            name="VIPString4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
@@ -157,7 +157,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot5 = Client(
-            name="NOBITAString5",
+            name="VIPString5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -380,7 +380,7 @@ class Call(PyTgCalls):
             if chat.username:
                 try:
                     await userbot.join_chat(chat.username)
-                except UsNOBITAlreadyParticipant:
+                except UsVIPlreadyParticipant:
                     pass
                 except Exception as e:
                     raise AssistantErr(_["call_3"].format(e))
@@ -407,7 +407,7 @@ class Call(PyTgCalls):
                     await asyncio.sleep(1)
                     await userbot.join_chat(invitelink)
                     await m.edit_text(_["call_6"].format(app.mention))
-                except UsNOBITAlreadyParticipant:
+                except UsVIPlreadyParticipant:
                     pass
                 except Exception as e:
                     raise AssistantErr(_["call_3"].format(e))
@@ -849,4 +849,4 @@ class Call(PyTgCalls):
                 autoend[chat_id] = {}
 
 
-NOBITA = Call()
+VIP = Call()
