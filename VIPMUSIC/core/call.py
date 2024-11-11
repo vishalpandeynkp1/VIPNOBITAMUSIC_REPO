@@ -12,11 +12,12 @@ from typing import Union
 
 from ntgcalls import TelegramServerError
 from pyrogram import Client
-from pyrogram.enums import ( hatMembersFilter, ChatMemberStatus
-from pyrogram.errors import 
-ChatAdminRequired,
+from pyrogram.enums import ChatMembersFilter, ChatMemberStatus  # Is line mein syntax correct kar diya
+
+from pyrogram.errors import (
+    ChatAdminRequired,
     FloodWait,
-    UsVIPlreadyParticipant,
+    UserAlreadyParticipant,  # Yahaan spelling correct ki
     UserNotParticipant,
 )
 from pyrogram.types import InlineKeyboardMarkup
