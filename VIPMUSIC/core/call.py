@@ -12,11 +12,11 @@ from typing import Union
 
 from ntgcalls import TelegramServerError
 from pyrogram import Client
-from pyrogram.enums import ChatMemberStatus
+from pyrogram.enums import ChatMembersFilter, ChatMemberStatus
 from pyrogram.errors import (
     ChatAdminRequired,
     FloodWait,
-    UserAlreadyParticipant,
+    UsNOBITAlreadyParticipant,
     UserNotParticipant,
 )
 from pyrogram.types import InlineKeyboardMarkup
@@ -32,9 +32,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from VIPMUSIC import LOGGER, YouTube, app
-from VIPMUSIC.misc import db
-from VIPMUSIC.utils.database import (
+from NOBITAMUSIC import LOGGER, YouTube, app
+from NOBITAMUSIC.misc import db
+from NOBITAMUSIC.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_assistant,
@@ -49,12 +49,13 @@ from VIPMUSIC.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from VIPMUSIC.utils.exceptions import AssistantErr
-from VIPMUSIC.utils.formatters import check_duration, seconds_to_min, speed_converter
-from VIPMUSIC.utils.inline.play import stream_markup, telegram_markup
-from VIPMUSIC.utils.stream.autoclear import auto_clean
-from VIPMUSIC.utils.thumbnails import gen_thumb
+from NOBITAMUSIC.utils.exceptions import AssistantErr
+from NOBITAMUSIC.utils.formatters import check_duration, seconds_to_min, speed_converter
+from NOBITAMUSIC.utils.inline.play import stream_markup, telegram_markup
+from NOBITAMUSIC.utils.stream.autoclear import auto_clean
+from NOBITAMUSIC.utils.thumbnails import gen_thumb
 
+active = []
 autoend = {}
 counter = {}
 AUTO_END_TIME = 1
@@ -67,22 +68,56 @@ async def _st_(chat_id):
 
 
 async def _clear_(chat_id):
+    # Clearing the chat ID data in the database
     db[chat_id] = []
 
-    await remove_active_video_chat(chat_id)
-    await remove_active_chat(chat_id)
+    # Removing active video chat and chat records
+    try:
+        await remove_active_video_chat(chat_id)
+        await remove_active_chat(chat_id)
+    except Exception as e:
+        print(f"Error removing active chats: {e}")
 
-    AMBOT = await app.send_message(
-        chat_id, f"🎶 **ꜱᴏɴɢ ʜᴀꜱ ᴇɴᴅᴇᴅ ɪɴ ᴠᴄ.** ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʜᴇᴀʀ ᴍᴏʀᴇ sᴏɴɢs?"
-    )
-    await asyncio.sleep(5)
-    await AMBOT.delete()
+    # Preparing the text for admin mentions
+    text = ""
+
+    try:
+        # Fetching admins from the chat
+        admins = [
+            admin.user.id
+            async for admin in app.get_chat_members(
+                chat_id, filter=ChatMembersFilter.ADMINISTRATORS
+            )
+        ]
+
+        # Looping through each admin to check if they are not a bot or deleted
+        for admin in admins:
+            admin_member = await app.get_chat_member(chat_id, admin)
+            if not admin_member.user.is_bot and not admin_member.user.is_deleted:
+                text += f"[\u2063](tg://user?id={admin})"
+    except Exception as e:
+        await app.send_message(
+            chat_id,
+            f"**ᴄᴏᴜʟᴅ ɪ ɢᴇᴛ ᴀᴅᴍɪɴ ᴀᴄᴄᴇss? ɪᴛ ᴡɪʟʟ ʜᴇʟᴘ ᴋᴇᴇᴘ ᴛʜᴇ sᴏɴɢs ᴘʟᴀʏɪɴɢ ᴍᴏʀᴇ ʀᴇʟɪᴀʙʟʏ. ᴛʜᴀɴᴋs ɪɴ ᴀᴅᴠᴀɴᴄᴇ! 🎵😊{text}**",
+        )
+
+    # Sending the final message
+    try:
+        AMBOT = await app.send_message(
+                chat_id,
+                f"**🎧 ꜱᴏɴɢ ʜᴀꜱ ᴇɴᴅᴇᴅ ɪɴ ᴠᴄ🥺**{text}",
+        )
+        await asyncio.sleep(10)
+        await AMBOT.delete()
+        
+    except Exception as e:
+        print(f"Error sending message: {e}")
 
 
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            name="VIPString1",
+            name="NOBITAString1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -92,7 +127,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot2 = Client(
-            name="VIPString2",
+            name="NOBITAString2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
@@ -102,7 +137,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot3 = Client(
-            name="VIPString3",
+            name="NOBITAString3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
@@ -112,7 +147,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name="VIPString4",
+            name="NOBITAString4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
@@ -122,7 +157,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot5 = Client(
-            name="VIPString5",
+            name="NOBITAString5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -151,8 +186,9 @@ class Call(PyTgCalls):
     async def stop_stream(self, chat_id: int):
         assistant = await group_assistant(self, chat_id)
         try:
-            await _clear_(chat_id)
             await assistant.leave_group_call(chat_id)
+            await _clear_(chat_id)
+
         except:
             pass
 
@@ -344,7 +380,7 @@ class Call(PyTgCalls):
             if chat.username:
                 try:
                     await userbot.join_chat(chat.username)
-                except UserAlreadyParticipant:
+                except UsNOBITAlreadyParticipant:
                     pass
                 except Exception as e:
                     raise AssistantErr(_["call_3"].format(e))
@@ -371,7 +407,7 @@ class Call(PyTgCalls):
                     await asyncio.sleep(1)
                     await userbot.join_chat(invitelink)
                     await m.edit_text(_["call_6"].format(app.mention))
-                except UserAlreadyParticipant:
+                except UsNOBITAlreadyParticipant:
                     pass
                 except Exception as e:
                     raise AssistantErr(_["call_3"].format(e))
@@ -384,6 +420,7 @@ class Call(PyTgCalls):
         video: Union[bool, str] = None,
         image: Union[bool, str] = None,
     ):
+        await asyncio.sleep(1)
         assistant = await group_assistant(self, chat_id)
         audio_stream_quality = await get_audio_bitrate(chat_id)
         video_stream_quality = await get_video_bitrate(chat_id)
@@ -477,12 +514,13 @@ class Call(PyTgCalls):
             if popped:
                 await auto_clean(popped)
             if not check:
-                await _clear_(chat_id)
-                return await client.leave_group_call(chat_id)
+                await client.leave_group_call(chat_id)
+
+                return await _clear_(chat_id)
         except:
             try:
-                await _clear_(chat_id)
-                return await client.leave_group_call(chat_id)
+                await client.leave_group_call(chat_id)
+                return await _clear_(chat_id)
             except:
                 return
         else:
@@ -735,7 +773,7 @@ class Call(PyTgCalls):
         return str(round(sum(pings) / len(pings), 3))
 
     async def start(self):
-        LOGGER(__name__).info("Starting PyTgCalls Client\n")
+        LOGGER(__name__).info("𝗦𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗣𝘆𝗧𝗴𝗖𝗮𝗹𝗹𝘀 𝗖𝗹𝗶𝗲𝗻𝘁 🥳\n")
         if config.STRING1:
             await self.one.start()
         if config.STRING2:
@@ -811,4 +849,4 @@ class Call(PyTgCalls):
                 autoend[chat_id] = {}
 
 
-VIP = Call()
+NOBITA = Call()
