@@ -1,5 +1,4 @@
 
-
 import os
 from random import randint
 from typing import Union
@@ -138,7 +137,7 @@ async def stream(
                 car = os.linesep.join(msg.split(os.linesep)[:17])
             else:
                 car = msg
-            carbon = await Carbon.generate(car, randint(100, 10000000))
+            carbon = await Carbon.genVIPte(car, randint(100, 10000000))
             upl = close_markup(_)
             return await app.send_photo(
                 original_chat_id,
