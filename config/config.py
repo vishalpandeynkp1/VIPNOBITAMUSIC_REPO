@@ -1,3 +1,12 @@
+#
+# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
+#
+# This file is part of < https://github.com/IamDvis/DV-MUSIC > project,
+# and is released under the MIT License.
+# Please see < https://github.com/IamDvis/DV-MUSIC/blob/master/LICENSE >
+#
+# All rights reserved.
+
 import os
 import re
 from os import getenv
@@ -37,7 +46,7 @@ DURATION_LIMIT_MIN = int(
 
 EXTRA_PLUGINS = getenv(
     "EXTRA_PLUGINS",
-    "True",
+    "False",
 )
 
 # Fill True if you want to load extra plugins
@@ -45,7 +54,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/vishalpandeynkp1/NOBITA-EXTRA-PLUGIN",
+    "https://github.com/IamDvis/DV-EXTRAPLUGIN",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
@@ -67,14 +76,14 @@ LOG_GROUP_ID = (getenv("LOG_GROUP_ID", ""))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "6972508083").split())
+    map(int, getenv("OWNER_ID", "11679112664").split())
 )  # Input type must be interger
 
 
 # make your bots privacy from telegra.ph and put your url here
 
 PRIVACY_LINK = getenv(
-    "PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-VIP-MUSIC-08-30"
+    "PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-DV-MUSIC-08-30"
 )
 
 
@@ -88,7 +97,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO",
+    "https://github.com/vishalpandeynkp1/durgeshrepo",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
@@ -140,7 +149,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/vishalpandeynkp1/durgeshrepo")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -183,7 +192,7 @@ COOKIES = getenv("COOKIES", None)
 SET_CMDS = getenv("SET_CMDS", "False")
 
 
-# You'll need a Pyrogram String Session for these vars. GenVIPte String from our session genVIPtor bot ......
+# You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot ......
 STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
@@ -197,7 +206,7 @@ STRING5 = getenv("STRING_SESSION5", None)
 BANNED_USERS = filters.user()
 YTDOWNLOADER = 1
 LOG = 2
-LOG_FILE_NAME = "VIPlogs.txt"
+LOG_FILE_NAME = "ERAlogs.txt"
 TEMP_DB_FOLDER = "tempdb"
 adminlist = {}
 lyrical = {}
@@ -327,7 +336,7 @@ if PING_IMG_URL:
 
 
 if PLAYLIST_IMG_URL:
-    if PLAYLIST_IMG_URL != "https://envs.sh/ZK5.jpg":
+    if PLAYLIST_IMG_URL != "https://envs.sh/nOh.jpg":
         if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
             print(
                 "[ERROR] - Your PLAYLIST_IMG_URL url is wrong. Please ensure that it starts with https://"
