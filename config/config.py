@@ -54,7 +54,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/IamDvis/DV-EXTRAPLUGIN",
+    "https://github.com/vishalpandeynkp1/NOBITA-EXTRA-PLUGIN",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
@@ -83,7 +83,7 @@ OWNER_ID = list(
 # make your bots privacy from telegra.ph and put your url here
 
 PRIVACY_LINK = getenv(
-    "PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-DV-MUSIC-08-30"
+    "PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-VIP-MUSIC-08-30"
 )
 
 
@@ -97,9 +97,9 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/vishalpandeynkp1/durgeshrepo",
+    "https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO",
 )
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
 # GIT TOKEN ( if your edited repo is private)
 GIT_TOKEN = getenv(
