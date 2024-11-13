@@ -118,15 +118,15 @@ AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", "")
 
 
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/NOBITA_ALL_BOT"
-)  # Example:- https://t.me/NOBITA_ALL_BOT
+    "SUPPORT_CHANNEL", "https://t.me/SEAZONE_UPDATE_BOT"
+)  # Example:- https://t.me/Feeling_smiley
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/NOBITA_SUPPORT"
-)  # Example:- https://t.me/NOBITA_SUPPORT
+    "SUPPORT_GROUP", "https://t.me/Friendship_Club_Group"
+)  # Example:- https://t.me/Feeling_smiley
 
 SUPPORT_CHAT = getenv(
-    "SUPPORT_GROUP", "https://t.me/NOBITA_SUPPORT"
-)  # Example:- https://t.me/NOBITA_SUPPORT
+    "SUPPORT_GROUP", "https://t.me/Friendship_Club_Group"
+)  # Example:- https://t.me/Feeling_smiley
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", False)
@@ -221,67 +221,67 @@ autoclean = []
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://envs.sh/ZK5.jpg",
+    "https://graph.org/file/26102d4a6bb7f72681e58-1ef3b6f387a4f41118.jpg",
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://envs.sh/ZK5.jpg",
+    "https://graph.org/file/263c5c77829cbc7bfa3bd-0e86cd12c33d22d454.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "https://envs.sh/ZK5.jpg",
+    "https://graph.org/file/2f8b9c602d565c0127f10-2c9ac001dd4159f84f.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL",
-    "https://envs.sh/ZK5.jpg",
+    "https://graph.org/file/2f8b9c602d565c0127f10-2c9ac001dd4159f84f.jpg",
 )
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://envs.sh/ZK5.jpg",
+    "https://graph.org/file/2f8b9c602d565c0127f10-2c9ac001dd4159f84f.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
     "TELEGRAM_AUDIO_URL",
-    "https://envs.sh/ZK5.jpg",
+    "https://graph.org/file/2f8b9c602d565c0127f10-2c9ac001dd4159f84f.jpg",
 )
 
 TELEGRAM_VIDEO_URL = getenv(
     "TELEGRAM_VIDEO_URL",
-    "https://envs.sh/ZK5.jpg",
+    "https://graph.org/file/2f8b9c602d565c0127f10-2c9ac001dd4159f84f.jpg",
 )
 
 STREAM_IMG_URL = getenv(
     "STREAM_IMG_URL",
-    "https://envs.sh/ZK5.jpg",
+    "https://graph.org/file/2f8b9c602d565c0127f10-2c9ac001dd4159f84f.jpg",
 )
 
 SOUNCLOUD_IMG_URL = getenv(
     "SOUNCLOUD_IMG_URL",
-    "https://envs.sh/ZK5.jpg",
+    "https://graph.org/file/2f8b9c602d565c0127f10-2c9ac001dd4159f84f.jpg",
 )
 
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
-    "https://envs.sh/ZK5.jpg",
+    "https://graph.org/file/2f8b9c602d565c0127f10-2c9ac001dd4159f84f.jpg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
     "SPOTIFY_ARTIST_IMG_URL",
-    "https://envs.sh/ZK5.jpg",
+    "https://graph.org/file/2f8b9c602d565c0127f10-2c9ac001dd4159f84f.jpg",
 )
 
 SPOTIFY_ALBUM_IMG_URL = getenv(
     "SPOTIFY_ALBUM_IMG_URL",
-    "https://envs.sh/ZK5.jpg",
+    "https://graph.org/file/2f8b9c602d565c0127f10-2c9ac001dd4159f84f.jpg",
 )
 
 SPOTIFY_PLAYLIST_IMG_URL = getenv(
     "SPOTIFY_PLAYLIST_IMG_URL",
-    "https://envs.sh/ZK5.jpg",
+    "https://graph.org/file/2f8b9c602d565c0127f10-2c9ac001dd4159f84f.jpg",
 )
 
 
