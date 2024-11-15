@@ -116,7 +116,7 @@ def queuemarkup(_, vidid, chat_id):
         [
             InlineKeyboardButton(
                 text="๏ ᴍᴏʀᴇ ๏",
-                url="https://t.me/Nobita_Support",
+                url="https://t.me/Friendship_Club_Group",
             ),
         ],
     ]
